@@ -1,0 +1,64 @@
+
+* {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Tamaño del tablero y de la informacion del juego */
+#tablero, .tableroInfo {
+    max-width: 500px;
+  
+}
+
+/*Division del tablero en 10 columnas*/
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+/*Tamaño del texto del juego*/
+#start, .tableroInfo {
+    font-size: 25px;
+}
+
+/*Ocultar mensaje de game over*/
+#gameOver {
+    display: none;
+}
+
+/*Estilos la infrmación del juego*/
+.tableroInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/*estilos del boton de inicio*/
+#iniciar {
+    background-color: #f35a69;
+    border: none;
+    color: white;
+}
+
+/*alineacion del puntaje a la derecha*/
+#scoreTablero {
+    display: inline-flex;
+}
+
+/*Color de cada uno los cuadrados del juego*/
+.cuadrado {
+    aspect-ratio: 1;
+}
+
+.cuadradoVacio {
+    background-color: #40FA72;
+}
+
+.cuadradoSnake {
+    background-color: #384FFF;
+    border: 1px solid #000;
+}
+
+.cuadradoComida {
+    background-color: #FF4538;
+    border: 1px solid #000;
+}
